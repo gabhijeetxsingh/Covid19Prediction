@@ -49,46 +49,9 @@
 
     <div class="container">
       <h2 class="text-center">Coronavirus Probability Detector</h2>
-      <form action="/" method="POST">
-        <div class="form-group">
-          <label for="fever">Enter Fever</label>
-          <input type="text" class="form-control" id="fever" name="fever" placeholder="Enter your fever">
-        </div>
-        
-        <div class="form-group">
-          <label for="age">Enter age</label>
-          <input type="text" class="form-control" id="age" name="age" placeholder="Enter your age">
-        </div>
-        
-
-        <div class="form-group">
-          <label for="pain">Body Pain</label>
-          <select class="form-control custom-select" name="pain" id="pain">
-            <option value="0">No Pain</option>
-            <option value="1">Severe Pain</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="runnyNose">Runny Nose</label>
-          <select class="form-control custom-select" name="runnyNose" id="runnyNose">
-            <option value="0">Yes</option>
-            <option value="1">No</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="diffBreath">Difficult Breathing</label>
-          <select class="form-control custom-select" name="diffBreath" id="diffBreath">
-            <option value="-1">No difficulty</option>
-            <option value="0">Little difficulty</option>            
-            <option value="1">Severe difficulty</option>
-          </select>
-        </div>
-
-        <button class="btn btn-primary">Submit</button>
-      </form>
-      
+      <p>Patient's probability of infection is {{inf}}%</p>
+      <!-- <a href="/"><button class="btn btn-primary">Go back</button></a> -->
+      <a class="btn btn-primary" href="/">Go back</a>
     </div>
 
     <!-- Optional JavaScript -->
