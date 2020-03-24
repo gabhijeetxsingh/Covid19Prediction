@@ -7,7 +7,12 @@ clf = pickle.load(file)
 file.close()
 
 @app.route('/', methods=["GET", "POST"])
-def hello_world():
+def home():
+    return render_template('home.html')
+
+
+@app.route('/detector', methods=["GET", "POST"])
+def detector():
     if(request.method == "POST"):
         myDict = request.form
         fever = float(myDict['fever'])
