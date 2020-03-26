@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
 app = Flask(__name__)
 import pickle
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 file = open('model.pkl','rb')
 clf = pickle.load(file)
