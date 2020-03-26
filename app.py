@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 import pickle
 
-file = open('model.pkl','rb', encoding="utf-8")
+file = open('model.pkl','rb')
 clf = pickle.load(file)
 file.close()
 
